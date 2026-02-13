@@ -1,0 +1,6 @@
+Pros: Using a high-contrast background image. with light text. 
+makes sure that users with low vision can still read the security alerts clearly.
+
+Cons: While the table layout is 600px wide, if a user zooms in to 400% , 
+the fixed width might cause horizontal scrolling, which is a 
+'con' for user experience.

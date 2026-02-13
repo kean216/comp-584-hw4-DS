@@ -1,48 +1,72 @@
+Great start! You’ve got the foundation ready. Since this assignment focuses on Email Engineering, the layout logic changes quite a bit from the last one.
+
+In "modern" web design, we use <div> and Flexbox, but for Email Design (HW3), we go back in time to Tables. This is because email apps like Outlook don't understand modern CSS very well.
+
+Here is the updated code structure to meet all your new requirements. Copy this into your index.html:
+
+HTML
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Email Campaign HW</title>
+    <title> Email Campaign </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body style="margin: 0; padding: 0; background-color: #f0f0f0; font-family: Arial, Helvetica, sans-serif;">
+<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, sans-serif;">
 
-    <div style="max-width: 600px; margin: 20px auto; background-color: #ffffff; border: 1px solid #cccccc; padding: 20px;">
-        
-        <div style="text-align: center; padding-bottom: 20px;">
-            <h1 style="color: #333333; margin: 0;">Cybersecurity Weekly</h1>
-            <h3 style="color: #d22027; margin: 5px 0;">Protecting Your Digital Life</h3>
-        </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f4f4f4">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                
+                <table width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="max-width: 600px; border-collapse: collapse;">
+                    
+                    <tr>
+                        <td align="center">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600" 
+                                 alt="Cybersecurity Hero" 
+                                 style="width: 100%; height: auto; display: block; max-width: 600px;">
+                        </td>
+                    </tr>
 
-        <div style="text-align: center;">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcoQN60wwWvsYDb9ya5Es0KI9u0jmseazGFsjntL6Qiju8FMEUreXQYoDGNBcY59GjG4_nmDNaxvZYMRvD5rRgO9NL0lnRs1OHs_TMCglqNdlfyUSbl_NIugJrT1FSgUtOI8Ks-moEgVc/w1200-h630-p-k-no-nu/KatieSecurity.jpg" alt="Security Banner" style="width: 100%; height: auto; display: block;">
-        </div>
+                    <tr>
+                        <td background="https://www.transparenttextures.com/patterns/carbon-fibre.png" 
+                            bgcolor="#222222" 
+                            align="center" 
+                            style="padding: 40px 20px; color: #ffffff; background-size: cover;">
+                            <h1 style="margin: 0; font-size: 24px; text-transform: uppercase;">Security Alert Update</h1>
+                            <p style="margin: 10px 0 0 0; font-size: 16px;">Detailed findings for HW3 Analysis.</p>
+                        </td>
+                    </tr>
 
-        <div style="padding: 20px; line-height: 1.6; color: #444444; font-size: 16px;">
-            <p>
-                <strong>Important Update:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
-            <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
+                    <tr>
+                        <td style="padding: 30px; line-height: 1.6; color: #444444; font-size: 16px;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </td>
+                    </tr>
 
-        <div style="text-align: center; padding: 20px;">
-            <a href="https://github.com" target="_blank" style="background-color: #333333; color: #ffffff; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 4px; display: inline-block;">
-                JOIN THE NEWSLETTER
-            </a>
-        </div>
+                    <tr>
+                        <td align="center" style="padding: 20px 0 40px 0;"> <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center" bgcolor="#d22027" style="border-radius: 5px;">
+                                        <a href="https://github.com" target="_blank" 
+                                           style="font-size: 18px; color: #ffffff; text-decoration: none; padding: 15px 30px; display: inline-block; font-weight: bold; border: 1px solid #d22027; border-radius: 5px;">
+                                            VIEW FINDINGS PDF
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-        <div style="border-top: 1px solid #eeeeee; padding-top: 20px; text-align: center; font-size: 12px; color: #888888;">
-            <p>1234 Security Lane, Northridge, CA 91330</p>
-            <p><a href="#" style="color: #888888;">Unsubscribe</a></p>
-        </div>
+                    <tr>
+                        <td align="center" style="padding: 20px; background-color: #333333; color: #ffffff; font-size: 12px;">
+                            <p>© 2026 CSUN COMP-584 Assignment</p>
+                            <p><a href="#" style="color: #aaaaaa; text-decoration: underline;">Unsubscribe</a></p>
+                        </td>
+                    </tr>
 
-    </div>
-
-</body>
+                </table> </td>
+        </tr>
+    </table> </body>
 </html>
