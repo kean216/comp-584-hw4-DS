@@ -1,15 +1,12 @@
+
 <!DOCTYPE html>
-
-
-
 <html lang="en">
 <head>
-
     <title>The Digital Sanctuary</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        /* 1. Animation: using skew */
+        /* animation */
         @keyframes glimmer {
             0% { transform: skewX(0deg); color: #d22027; }
             50% { transform: skewX(-5deg); color: #ff0000; }
@@ -20,16 +17,18 @@
             animation: glimmer 3s ease-in-out infinite; 
         }
 
-        /* 2. Responsiveness: Stacking columns */
+        /* 2. Stacking columns */
+
         @media screen and (max-width: 600px) {
             .stack { display: block !important; width: 100% !important; }
-            .mobile-font { font-size: 24px !important; }
+            .mobile-font { font-size: 22px !important; }
         }
 
-        /* 3. Interactivity: The Checkbox Technique */
-
+        /* checkbox */
+        
         #spell-toggle { display: none; }
         .hidden-realm { 
+
             display: none; 
             background-color: #1a1a1a; 
             color: #00ff00; 
@@ -40,43 +39,50 @@
         }
         #spell-toggle:checked ~ .hidden-realm { display: block !important; }
     </style>
-
 </head>
 <body style="margin: 0; padding: 0; background-color: #121212; font-family: 'Georgia', serif;">
 
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#121212">
         <tr>
             <td align="center" style="padding: 20px 0;">
                 
                 <table width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="max-width: 600px; border-radius: 8px; overflow: hidden;">
                     
                     <tr>
-
                         <td align="center" style="padding: 40px 20px; background-color: #222;">
-                            <h1 style="margin: 0; color: #ffffff; letter-spacing: 2px;">WARDEN'S SHIELD</h1>
-
-                            <div class="magic-text" style="font-weight: bold;">Banishing the Ad-Demons</div>
+                            <h1 style="margin: 0; color: #ffffff; letter-spacing: 2px;">kaddy's Protection</h1>
+                            <div class="magic-text" style="font-weight: bold;">Dispelling the Ad-Demons</div>
                         </td>
                     </tr>
 
                     <tr>
                         <td align="center">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcoQN60wwWvsYDb9ya5Es0KI9u0jmseazGFsjntL6Qiju8FMEUreXQYoDGNBcY59GjG4_nmDNaxvZYMRvD5rRgO9NL0lnRs1OHs_TMCglqNdlfyUSbl_NIugJrT1FSgUtOI8Ks-moEgVc/w1200-h630-p-k-no-nu/KatieSecurity.jpg" 
-                                 alt="The Warden" width="600" style="width: 100%; height: auto; display: block;">
+                            <img src="images/hero.jpg" 
+                                 alt="The Warden Shield" width="600" style="width: 100%; height: auto; display: block;">
                         </td>
                     </tr>
 
                     <tr>
-                        <td style="padding: 30px 20px;">
+                        <td style="padding: 30px 20px; line-height: 1.6; color: #444444; font-size: 16px;">
+                            <p style="margin: 0;">
+                                In a realm where ad-demons roam free and where tracking scrolls are commonplace,  
+                                comes a magical cat 'kaddy' to save you from these evils. With Kaaddy's Protection
+                                and magic these dark tricks stand no change against your light.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 0 20px 30px 20px;">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td class="stack" width="270" valign="top" style="padding-bottom: 20px;">
                                         <h3 style="color: #d22027;">The Silent Veil</h3>
-                                        <p style="font-size: 15px; color: #444;">Woven from ancient code to make invasive tracking scrolls invisible to the naked eye.</p>
+                                        <p style="font-size: 14px; color: #666;">Woven from ancient code to make invasive tracking scrolls invisible to the naked eye.</p>
                                     </td>
                                     <td class="stack" width="270" valign="top" style="padding-left: 10px;">
                                         <h3 style="color: #d22027;">Mana Saver</h3>
-                                        <p style="font-size: 15px; color: #444;">Reduce your data consumption and speed up your journey through the digital realms.</p>
+                                        <p style="font-size: 14px; color: #666;">Reduce your data consumption and speed up your journey through the digital realms.</p>
                                     </td>
                                 </tr>
                             </table>
@@ -84,9 +90,9 @@
                     </tr>
 
                     <tr>
-                        <td align="center" style="padding: 40px 20px; background: url('https://www.transparenttextures.com/patterns/dark-matter.png') #000;">
+                        <td align="center" style="padding: 40px 20px; background: #eeeeee;">
                             <input type="checkbox" id="spell-toggle">
-                            <label for="spell-toggle" style="background: #d22027; color: #fff; padding: 15px 30px; cursor: pointer; border-radius: 50px; font-weight: bold; display: inline-block; box-shadow: 0 0 15px #d22027;">
+                            <label for="spell-toggle" style="background: #d22027; color: #fff; padding: 15px 30px; cursor: pointer; border-radius: 50px; font-weight: bold; display: inline-block;">
                                 CAST DISPEL MAGIC
                             </label>
                             
@@ -125,8 +131,8 @@
 
                     <tr>
                         <td align="center" style="padding: 30px; background-color: #222; color: #999; font-size: 12px;">
-                            <p>Sent via Carrier Pigeon to Northridge, CA 91990</p>
-                            <p><a href="#" style="color: #d22027; text-decoration: none;">View the Archives</a> | <a href="#" style="color: #999;">Leave the Guild</a></p>
+                            <p>Sent via Carrier Pigeon to Northridge, CA 91330</p>
+                            <p><a href="#" style="color: #d22027; text-decoration: none;">View the Archives</a> | <a href="#" style="color: #999;">Lose the magic</a></p>
                         </td>
                     </tr>
 
